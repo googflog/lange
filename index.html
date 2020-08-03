@@ -33,6 +33,7 @@
       </div>
       <div class="l-main">
         <script id="lodashTemplateTitle" type="text/html"><h2 class="title"><%= title %></h2></script>
+        <script id="lodashTemplateTab" type="text/html"><li class="tab" data-name="<%= sheet_no %>"><%= title %></li></script>
         <script id="lodashTemplate" type="text/html">
           <div class="section">
             <div class="number_block"><%= no %></div>
@@ -59,9 +60,10 @@
         </script>
         <div class="ctrl">
           <div class="ctrl_inline">
-            <p>表示</p><a class="js-zh_word_hide" href="#">中国語</a><a class="js-zh_ruby_hide" href="#">ピンイン</a><a class="js-jp_word_hide" href="#">日本語</a>
+            <p>表示</p><a class="js-zh_word_hide" href="#">中国語</a><a class="js-zh_ruby_hide" href="#">ピンイン</a><a class="js-jp_word_hide" href="#">日本語</a><a class="js-randam_sort" href="#">ランダム</a>
           </div>
         </div>
+        <ul id="tablist"></ul>
         <div id="wordlist"></div>
       </div>
       <div class="l-footer"></div>
